@@ -1,0 +1,44 @@
+[
+    {
+        "_id": "1",
+        "picture": "https://static.toiimg.com/thumb/msid-70193411,imgsize-752362,width-800,height-600,resizemode-75/70193411.jpg",
+        "name": "Jumping rope",
+        "description": "The number of calories you will burn by jumping rope depends on how much you weigh when you start.",
+        "time": 30
+    },
+    {
+        "_id": "2",
+        "picture": "https://cdn1.sph.harvard.edu/wp-content/uploads/sites/21/2019/02/Man-doing-push-ups_470x313.jpg",
+        "name": "Push ups",
+        "description": "The push-up helps to build muscle and improve strength throughout the upper body.",
+        "time": 20
+    },
+    {
+        "_id": "3",
+        "picture": "https://media.istockphoto.com/photos/every-day-routine-picture-id924765866?k=20&m=924765866&s=612x612&w=0&h=8LcIfbWbz_CotnYuQplue87rh1q3JSjmARgybZ927Ng=",
+        "name": "Plank",
+        "description": "The number of calories you will burn by Plank depends on how much you weigh when you start.",
+        "time": 45
+    },
+    {
+        "_id": "4",
+        "picture": "https://media.istockphoto.com/photos/mindset-is-everything-picture-id1002863126?k=20&m=1002863126&s=612x612&w=0&h=02cvoEIkJKNgkyrxkFktgwOQ0PeLaOhHiG2szbBsRzQ=",
+        "name": "Squats",
+        "description": "Squat's movement strengthens your tendons, bones, and ligaments around the leg muscles.",
+        "time": 30
+    },
+    {
+        "_id": "5",
+        "picture": "https://media.istockphoto.com/photos/young-man-practicing-walking-lunge-with-kettle-bell-picture-id1136449249?k=20&m=1136449249&s=612x612&w=0&h=kKGZUqtAsaxAPMvrsQEz_ldYbzt5o8k-61MtO9SZid8=",
+        "name": "Lunges",
+        "description": "The number of calories you will burn by Lunges depends on how much you weigh when you start.",
+        "time": 20
+    },
+    {
+        "_id": "6",
+        "picture": "https://media.istockphoto.com/photos/working-out-at-gym-concept-young-asian-handsome-man-working-out-his-picture-id1313961731?k=20&m=1313961731&s=612x612&w=0&h=hoDWHSCuGH733fuo4XcfBWjoHsPa_tP6ROc4xjdjMso=",
+        "name": "Cross Crunches",
+        "description": "The number of calories you will burn by Cross Crunches depends on how much you weigh when you start.",
+        "time": 50
+    }
+]
