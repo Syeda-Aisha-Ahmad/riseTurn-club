@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import CalculationArea from '../calculationArea/CalculationArea';
 import Workout from '../workout/Workout';
 import './club.css'
 
@@ -25,7 +26,7 @@ const Club = () => {
                 </div>
             </div>
             <div className="calculation-area">
-                <h1>Calculation</h1>
+                <CalculationArea></CalculationArea>
             </div>
         </div>
     );

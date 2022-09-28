@@ -1,0 +1,63 @@
+.calculationArea {
+    position: sticky;
+    top: 0;
+    padding: 20px;
+}
+
+.times {
+    background-color: #fff;
+    padding: 20px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.times span {
+    color: #8eaad6;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px;
+}
+
+.times span:hover {
+    color: #fff;
+    background-color: #8eaad6;
+    border-radius: 100%;
+}
+
+.add-a-break {
+    margin-top: 40px;
+}
+
+.details {
+    color: #8eaad6;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.details span {
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.exercise-details {
+    margin-top: 40px;
+}
+
+.exercise-details button {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #4C6793;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.exercise-details button:hover {
+    background-color: #36507b;
+}
