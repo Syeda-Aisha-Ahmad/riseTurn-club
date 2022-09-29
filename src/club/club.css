@@ -25,13 +25,35 @@
 }
 
 
+
+
+
+/* Mobile Device */
+
 @media screen and (max-width:688px) {
-    body {
-        background-color: red;
-    }
 
     .club {
         display: flex;
         flex-direction: column;
+    }
+
+    .workout-cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 25px;
+        padding-top: 40px;
+    }
+}
+
+
+/* Tablet Device */
+
+@media screen and (min-width:689px) and (max-width:992px) {
+
+    .workout-cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 15px;
+        padding-top: 40px;
     }
 }

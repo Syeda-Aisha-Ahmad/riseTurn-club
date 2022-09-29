@@ -30,7 +30,7 @@
 /* Mobile Device */
 
 @media screen and (max-width:688px) {
-    body {
-        background-color: red;
+    .workout-card {
+        width: 100%;
     }
 }
