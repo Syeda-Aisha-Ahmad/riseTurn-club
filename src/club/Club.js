@@ -6,6 +6,7 @@ import './club.css'
 const Club = () => {
 
     const [workouts, setWorkouts] = useState([]);
+    const [workoutTimes, setWorkoutTimes] = useState([]);
     useEffect(() => {
         fetch('workoutsInfo.json')
             .then(res => res.json())
@@ -13,7 +14,8 @@ const Club = () => {
     }, [])
 
     const addToCalculationArea = (id) => {
-        console.log(id)
+        const totalWorkoutTimes = [...workoutTimes, id];
+        setWorkoutTimes(totalWorkoutTimes);
     }
     return (
         <div className='club'>
@@ -32,7 +34,7 @@ const Club = () => {
             </div>
             <div className="calculation-area">
                 <CalculationArea
-                    workouts={workouts}
+                    workouts={workoutTimes}
                 ></CalculationArea>
             </div>
         </div>

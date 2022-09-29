@@ -5,10 +5,14 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 const CalculationArea = (props) => {
+
+    // toast
     const notify = () => toast("Congratulations! Activity Complited...");
+
+    // 
     let total = 0;
-    for (let workout of props.workouts) {
-        total = total + workout.time
+    for (const workout of props.workouts) {
+        total = total + workout;
     }
     return (
         <div className='calculationArea'>
