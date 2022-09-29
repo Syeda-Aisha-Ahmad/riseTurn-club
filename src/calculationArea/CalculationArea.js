@@ -1,7 +1,12 @@
 import React from 'react';
 import './calculationArea.css'
 
-const CalculationArea = () => {
+const CalculationArea = (props) => {
+    console.log(props.workouts)
+    let total = 0;
+    for (let workout of props.workouts) {
+        total = total + workout.time
+    }
     return (
         <div className='calculationArea'>
             <div>
@@ -25,7 +30,7 @@ const CalculationArea = () => {
                 <h2>Exercise Details</h2>
                 <div className="details">
                     <span>Exercise Time:</span>
-                    <span>0 sec</span>
+                    <span>{total} sec</span>
                 </div>
                 <div className="details">
                     <span>Break Time:</span>

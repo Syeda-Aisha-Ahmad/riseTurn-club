@@ -26,3 +26,11 @@
 .workout-card button:hover {
     background-color: #36507b;
 }
+
+/* Mobile Device */
+
+@media screen and (max-width:688px) {
+    body {
+        background-color: red;
+    }
+}

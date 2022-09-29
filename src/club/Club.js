@@ -11,6 +11,10 @@ const Club = () => {
             .then(res => res.json())
             .then(data => setWorkouts(data))
     }, [])
+
+    const addToCalculationArea = (id) => {
+        console.log(id)
+    }
     return (
         <div className='club'>
             <div className="cards-area">
@@ -21,12 +25,15 @@ const Club = () => {
                         workouts.map((workout => <Workout
                             key={workout.id}
                             workout={workout}
+                            handlerBtn={addToCalculationArea}
                         ></Workout>))
                     }
                 </div>
             </div>
             <div className="calculation-area">
-                <CalculationArea></CalculationArea>
+                <CalculationArea
+                    workouts={workouts}
+                ></CalculationArea>
             </div>
         </div>
     );
