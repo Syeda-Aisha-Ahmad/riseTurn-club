@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import CalculationArea from '../calculationArea/CalculationArea';
 import Workout from '../workout/Workout';
 import './club.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faDumbbell } from '@fortawesome/free-solid-svg-icons'
 
 const Club = () => {
 
@@ -26,7 +28,7 @@ const Club = () => {
     return (
         <div className='club'>
             <div className="cards-area">
-                <h1>Rise Turn Club</h1>
+                <h1> <FontAwesomeIcon icon={faDumbbell} />Rise Turn Club</h1>
                 <h3>Select Today's workout</h3>
                 <div className='workout-cards'>
                     {

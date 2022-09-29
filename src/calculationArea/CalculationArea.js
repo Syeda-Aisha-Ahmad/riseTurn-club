@@ -28,6 +28,7 @@ const CalculationArea = (props) => {
                 <h1>User's Information</h1>
                 <h3>Name: Syeda Aisha Ahmad</h3>
                 <p>Dhaka, Bangladesh</p>
+                <p>Age: 20</p>
             </div>
 
             <div className='add-a-break'>
