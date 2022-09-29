@@ -16,7 +16,7 @@ const Qa = () => {
 
             <div>
                 <h1>What is the usase of useEffect other than data load?</h1>
-                <p><b>Ans:</b> </p>
+                <p><b>Ans:</b> The useEffect() is used for causing side effects in functional components and it is also capable for handling componentDidMount(), componentDidUpdate() and componentWillUnmount() life-cycle methods of class based components into functional component.</p>
             </div>
         </div>
     );

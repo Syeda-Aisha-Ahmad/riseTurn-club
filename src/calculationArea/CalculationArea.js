@@ -14,6 +14,7 @@ const CalculationArea = (props) => {
     //
     let total = 0;
     let sec = 0;
+    let breakTimedb = localStorage.getItem('Break-Time')
     for (const workout of workouts) {
         total = total + workout;
     }
@@ -51,7 +52,7 @@ const CalculationArea = (props) => {
                 </div>
                 <div className="details">
                     <span>Break Time:</span>
-                    <span>{sec} sec</span>
+                    <span>{breakTimedb} sec</span>
                 </div>
                 <button onClick={notify}>Activity Completed</button>
                 <ToastContainer />

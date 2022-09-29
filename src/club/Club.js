@@ -14,14 +14,14 @@ const Club = () => {
             .then(data => setWorkouts(data))
     }, [])
 
-    const addToCalculationArea = (id) => {
-        const totalWorkoutTimes = [...workoutTimes, id];
+    const addToCalculationArea = (time) => {
+        const totalWorkoutTimes = [...workoutTimes, time];
         setWorkoutTimes(totalWorkoutTimes);
     }
-    const addBreakbtn = (id) => {
-        const totalSeconds = [...breakSec, id];
+    const addBreakbtn = (second) => {
+        const totalSeconds = [...breakSec, second];
         setBreakSec(totalSeconds);
-        localStorage.setItem('Break-Time', id)
+        localStorage.setItem('Break-Time', second)
     }
     return (
         <div className='club'>
