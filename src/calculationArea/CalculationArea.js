@@ -1,8 +1,11 @@
 import React from 'react';
 import './calculationArea.css'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const CalculationArea = (props) => {
-    console.log(props.workouts)
+    const notify = () => toast("Congratulations! Activity Complited...");
     let total = 0;
     for (let workout of props.workouts) {
         total = total + workout.time
@@ -36,10 +39,12 @@ const CalculationArea = (props) => {
                     <span>Break Time:</span>
                     <span>0 sec</span>
                 </div>
-                <button>Activity Completed</button>
+                <button onClick={notify}>Activity Completed</button>
+                <ToastContainer />
+
             </div>
         </div>
     );
-};
+}
 
 export default CalculationArea;
