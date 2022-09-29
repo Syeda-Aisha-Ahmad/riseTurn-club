@@ -11,19 +11,6 @@
     border-bottom-right-radius: 30px;
 }
 
-.times span {
-    color: #8eaad6;
-    font-size: 20px;
-    font-weight: 700;
-    padding: 10px;
-}
-
-.times span:hover {
-    color: #fff;
-    background-color: #8eaad6;
-    border-radius: 100%;
-}
-
 .add-a-break {
     margin-top: 40px;
 }
@@ -60,4 +47,5 @@
 
 .exercise-details button:hover {
     background-color: #36507b;
+
 }

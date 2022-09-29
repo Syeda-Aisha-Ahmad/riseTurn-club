@@ -7,6 +7,7 @@ const Club = () => {
 
     const [workouts, setWorkouts] = useState([]);
     const [workoutTimes, setWorkoutTimes] = useState([]);
+    const [breakSec, setBreakSec] = useState([]);
     useEffect(() => {
         fetch('workoutsInfo.json')
             .then(res => res.json())
@@ -16,6 +17,10 @@ const Club = () => {
     const addToCalculationArea = (id) => {
         const totalWorkoutTimes = [...workoutTimes, id];
         setWorkoutTimes(totalWorkoutTimes);
+    }
+    const addBreakbtn = (id) => {
+        const totalSeconds = [...breakSec, id];
+        setBreakSec(totalSeconds);
     }
     return (
         <div className='club'>
@@ -34,7 +39,10 @@ const Club = () => {
             </div>
             <div className="calculation-area">
                 <CalculationArea
+                    workoutData={workouts}
                     workouts={workoutTimes}
+                    seconds={breakSec}
+                    addBreakBtn={addBreakbtn}
                 ></CalculationArea>
             </div>
         </div>

@@ -1,0 +1,19 @@
+.seconds-div {
+    display: inline-block;
+    margin: 8px;
+}
+
+
+.seconds-div span {
+    color: #8eaad6;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px;
+}
+
+.seconds-div span:hover {
+    color: #fff;
+    background-color: #8eaad6;
+    border-radius: 100%;
+    cursor: pointer;
+}

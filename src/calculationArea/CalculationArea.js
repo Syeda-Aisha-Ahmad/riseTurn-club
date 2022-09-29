@@ -2,18 +2,25 @@ import React from 'react';
 import './calculationArea.css'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Span from './span/Span';
 
 
 const CalculationArea = (props) => {
 
+    const { workoutData, seconds, addBreakBtn, workouts } = props;
     // toast
     const notify = () => toast("Congratulations! Activity Complited...");
 
-    // 
+    //
     let total = 0;
-    for (const workout of props.workouts) {
+    let sec = 0;
+    for (const workout of workouts) {
         total = total + workout;
     }
+    for (const second of seconds) {
+        sec = second;
+    }
+
     return (
         <div className='calculationArea'>
             <div>
@@ -25,12 +32,15 @@ const CalculationArea = (props) => {
             <div className='add-a-break'>
                 <h2>Add A Break</h2>
                 <div className='times'>
-                    <span>10s</span>
-                    <span>20s</span>
-                    <span>30s</span>
-                    <span>40s</span>
-                    <span>50s</span>
+                    {
+                        workoutData.map(sec => <Span
+                            key={sec.id}
+                            second={sec}
+                            addBreakBtn={addBreakBtn}></Span>)
+                    }
                 </div>
+
+
             </div>
 
             <div className='exercise-details'>
@@ -41,7 +51,7 @@ const CalculationArea = (props) => {
                 </div>
                 <div className="details">
                     <span>Break Time:</span>
-                    <span>0 sec</span>
+                    <span>{sec} sec</span>
                 </div>
                 <button onClick={notify}>Activity Completed</button>
                 <ToastContainer />
