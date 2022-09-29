@@ -21,6 +21,7 @@ const Club = () => {
     const addBreakbtn = (id) => {
         const totalSeconds = [...breakSec, id];
         setBreakSec(totalSeconds);
+        localStorage.setItem('Break-Time', id)
     }
     return (
         <div className='club'>
