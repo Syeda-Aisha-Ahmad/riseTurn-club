@@ -1,0 +1,36 @@
+.workout-card {
+    border: 1px solid rgb(203, 202, 202);
+    width: 75%;
+    padding: 10px;
+    border-radius: 15px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.workout-card img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.workout-card button {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #4C6793;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+.workout-card button:hover {
+    background-color: #36507b;
+}
+
+/* Mobile Device */
+
+@media screen and (max-width:688px) {
+    .workout-card {
+        width: 100%;
+    }
+}

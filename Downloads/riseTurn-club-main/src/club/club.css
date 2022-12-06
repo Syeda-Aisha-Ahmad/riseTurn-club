@@ -1,0 +1,59 @@
+.club {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+.workout-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 100px;
+    padding-top: 40px;
+}
+
+.cards-area {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.cards-area h1 {
+    color: #4C6793;
+}
+
+.calculation-area {
+    color: #fff;
+    background-color: #8eaad6;
+}
+
+
+
+
+
+/* Mobile Device */
+
+@media screen and (max-width:688px) {
+
+    .club {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .workout-cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 25px;
+        padding-top: 40px;
+    }
+}
+
+
+/* Tablet Device */
+
+@media screen and (min-width:689px) and (max-width:992px) {
+
+    .workout-cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 15px;
+        padding-top: 40px;
+    }
+}
